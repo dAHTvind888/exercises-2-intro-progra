@@ -55,6 +55,24 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
+    int factorial = 1;
+
+    if(n > 14){
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+    }
+    else if(n < 0){
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
+    }
+
+    else if(n == 0){
+        cout << factorial << endl;
+    }
+    else if(n > 0){
+        for(int i = 1; i <= n; i++){
+            factorial *= i;
+        }
+        cout << factorial << endl;
+    }
 }
 
 void exercise_5(int n, int k) {
