@@ -10,6 +10,7 @@ void exercise_1(string s1) {
     if(s1[i] == ' '){
       cout << i<< endl;
     }
+    
     else if(i == s1.size()){
       cout << i << endl;
     }
