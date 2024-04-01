@@ -46,7 +46,7 @@ void exercise_3(string s1) {
     if(s1[i] == '1'){
       cout << "Om-nom-nom :P" << endl;
     }
-    else if(s1[i] == '' && s1[i + 1] == '1'){
+    else if(s1[i] == ' ' && s1[i + 1] == '1'){
       cout << "Om-nom-nom :P" << endl;
     }
     else if(s1[i] == '0'){
