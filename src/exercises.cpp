@@ -10,7 +10,6 @@ void exercise_1(string s1) {
     if(s1[i] == ' '){
       cout << i<< endl;
     }
-    
     else if(i == s1.size()){
       cout << i << endl;
     }
@@ -19,6 +18,19 @@ void exercise_1(string s1) {
 
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
+  string word;
+  for(int i = 0; i <= s1.size(); i++){
+    if(s1[i] == ' '){
+      cout << "[" << word << "]" << endl;
+      word = "";
+    }
+    else if(i == s1.size()){
+      cout << "[" << word << "]" << endl;
+    }
+    else{
+      word += s1[i];
+    }
+  }
 }
 
 void exercise_3(string s1) {
