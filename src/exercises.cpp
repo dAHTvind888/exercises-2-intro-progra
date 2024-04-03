@@ -82,9 +82,10 @@ void exercise_5(int n, int k) {
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   string n_str = to_string(n);
-  int digit_container, sum_digits;
+  int digit_container = 0; 
+  int sum_digits = 0;
 
-  for(int i = 0; i < n_str.size(); i++){
+  for(int i = 0; i < n_str.size(); ++i){
     digit_container = n_str[i] - '0';
     sum_digits += digit_container;
   }
@@ -93,6 +94,13 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
+  double n_sum, sum_container;
+
+  for(int i = 1; i <= n; i++){
+    sum_container = pow(-1, i + 1)/ i;
+    n_sum += sum_container;
+  }
+    cout << n_sum << endl;
 }
 
 void exercise_8(string s) {
