@@ -161,7 +161,8 @@ void exercise_9(string s) {
     if(s[i] == 'f'){
       f_counter += 1;
       if(f_counter == 2){
-        cout << i;
+        cout << i << endl;
+        return;
       }
     }
     else{
@@ -171,9 +172,11 @@ void exercise_9(string s) {
 
   if(f_counter == 1){
     cout << "-1" << endl;
+    return;
   }
   else{
     cout << "-2" << endl;
+    return;
   }
 }
 
