@@ -85,11 +85,10 @@ int exercise_6(int n) {
   int digit_container, sum_digits;
 
   for(int i = 0; i < n_str.size(); i++){
-    digit_container = n_str[i];
-    sum_digits += digit_container - '0';
+    digit_container = n_str[i] - '0';
+    sum_digits += digit_container;
   }
   return sum_digits;
-  return 0;
 }
 
 void exercise_7(int n) {
