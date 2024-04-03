@@ -208,7 +208,7 @@ void exercise_11() {
   // TODO: YOUR CODE HERE
   double U = 1;
   double U_aux;
-  string Un = "U"
+  string Un = "U";
   cout << "U0 = 1" << endl;
   for(int i = 0, j = 1; i <= 10; i++, j++){
     U_aux = U/(i + 1);
