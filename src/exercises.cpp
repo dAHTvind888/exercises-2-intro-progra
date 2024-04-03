@@ -116,41 +116,41 @@ void exercise_7(int n) {
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
   char str_c1, str_c2;
-    string str_reverse, str2;
+  string str_reverse, str2;
 
-    if(s.size() > 100){
-        cout << "your string cannot be longer than 100" << endl;
-        return;
-    }
-    else{//str1.size() - 1 is because the the size() is one number more than the last index, so when you access
-         //the str1[i] you'll get the a blank space rather than the last char
-        for(int i = s.size() - 1; i >= 0; i--){
-            if(s[i] != ' '){// remember that str[i] is a char so when you compare it, use '' instead of ""
-                str_c1 = s[i];
-                str_reverse += str_c1;
-            }
-            else{
-                continue;
-            }
-        }
-
-        for(int i = 0; i < s.size(); i++){
-            if(s[i] != ' '){
-                str_c2 = s[i];
-                str2 += str_c2;
-            }
-            else{
-                continue;
-            }
-        }
+  if(s.size() > 100){
+    cout << "your string cannot be longer than 100" << endl;
+    return;
+  }
+  else{//str1.size() - 1 is because the the size() is one number more than the last index, so when you access
+       //the str1[i] you'll get the a blank space rather than the last char
+    for(int i = s.size() - 1; i >= 0; i--){
+      if(s[i] != ' '){// remember that str[i] is a char so when you compare it, use '' instead of ""
+        str_c1 = s[i];
+        str_reverse += str_c1;
+      }
+      else{
+        continue;
+      }
     }
 
-    if(str_reverse == str2){
-        cout << "YES" << endl;
+    for(int i = 0; i < s.size(); i++){
+      if(s[i] != ' '){
+        str_c2 = s[i];
+        str2 += str_c2;
+      }
+      else{
+        continue;
+      }
     }
-    else{
-        cout << "NO" << endl;
-    }
+  }
+
+  if(str_reverse == str2){
+    cout << "YES" << endl;
+  }
+  else{
+    cout << "NO" << endl;
+  }
 }
 
 void exercise_9(string s) {
