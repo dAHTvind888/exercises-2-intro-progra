@@ -186,7 +186,7 @@ int exercise_10(int a, int b) {
   int div_c2 = 1;
 
   for(int i = 1; i <= a && i <= b; i++){
-    if(num1 % i == 0 && num2 % i == 0){
+    if(a % i == 0 && b % i == 0){
       div_c1 = i;
       if(div_c1 > div_c2){
         div_c2 = div_c1;
