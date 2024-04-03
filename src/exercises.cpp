@@ -250,6 +250,24 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+  string num_bi, num_bi_aux;
+  int remainder = 0;
+    
+  if(decimal == 0){
+    return "0";
+  }
+  else{
+    while(decimal != 0){
+      remainder = decimal % 2;
+      num_bi += to_string(remainder);
+      decimal /= 2;
+    }
+    
+    for(int i = num_bi.size() - 1; i >= 0; i--){
+      num_bi_aux += num_bi[i];
+    }
+    cout << num_bi_aux << endl;    
+  }
 }
 
 void exercise_16(int divident, int divider) {
