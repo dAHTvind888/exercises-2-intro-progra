@@ -206,6 +206,14 @@ int exercise_10(int a, int b) {
 
 void exercise_11() {
   // TODO: YOUR CODE HERE
+  double U = 1;
+  double U_aux;
+
+  for(int i = 0; i <= 10; i++){
+    U_aux = U/(i + 1);
+    cout << U_aux << endl;
+    U = U_aux;
+  }
 }
 
 void exercise_12() {
