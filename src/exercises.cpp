@@ -210,7 +210,7 @@ void exercise_11() {
   double U_aux;
   string Un = "U";
   cout << "U0 = 1" << endl;
-  for(int i = 0, j = 1; i <= 10; i++, j++){
+  for(int i = 0, j = 1; i < 10; i++, j++){
     U_aux = U/(i + 1);
     cout << Un << j << " = " << U_aux << endl;
     U = U_aux;
