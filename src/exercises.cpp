@@ -89,7 +89,7 @@ int exercise_6(int n) {
     sum_digits += digit_container;
   }
   return sum_digits;
-  //return 0;
+  return 0;
 }
 
 void exercise_7(int n) {
