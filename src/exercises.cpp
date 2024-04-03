@@ -81,6 +81,20 @@ void exercise_5(int n, int k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+  string num_str = to_string(num);
+    int digit_container, sum_digits;
+
+    if(num >= 0){
+      for(int i = 0; i < num_str.size(); i++){
+        digit_container = num_str[i] - '0';
+        sum_digits += digit_container;
+    }
+      return sum_digits;
+    }
+    else{
+      cout << "num cannot be negative" << endl;
+      return 0;
+    }
   return 0;
 }
 
