@@ -254,7 +254,7 @@ void exercise_15(int decimal) {
   int remainder = 0;
     
   if(decimal == 0){
-    return "0";
+    cout << "0" << endl;
   }
   else{
     while(decimal != 0){
