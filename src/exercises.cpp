@@ -81,12 +81,12 @@ void exercise_5(int n, int k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
-  string num_str = to_string(num);
-    int digit_container, sum_digits;
+  string n_str = to_string(n);
+  int digit_container, sum_digits;
 
-    if(num >= 0){
-      for(int i = 0; i < num_str.size(); i++){
-        digit_container = num_str[i] - '0';
+    if(n >= 0){
+      for(int i = 0; i < n_str.size(); i++){
+        digit_container = n_str[i] - '0';
         sum_digits += digit_container;
     }
       return sum_digits;
