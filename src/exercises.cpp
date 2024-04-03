@@ -241,10 +241,10 @@ string exercise_14(int n) {
   }
 
   if(n_reverse == n_str){
-    return "Es palindromo";
+    return "Es palindrome";
   }
   else{
-    return "No es palindromo";
+    return "No es palindrome";
   }
 }
 
