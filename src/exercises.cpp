@@ -272,6 +272,34 @@ void exercise_15(int decimal) {
 
 void exercise_16(int divident, int divider) {
   // TODO: YOUR CODE HERE
+  int quotient = 0;
+  int remainder = 0;
+  int divider_aux = 0;
+
+  if(divider == 0){
+    cout << "";
+    return;
+  }
+  else{
+    divider_aux = divider;
+    while(divider <= divident){
+      divider += divider_aux;
+      quotient++;
+      if(divider > divident){
+        divider -= divider_aux;
+        remainder = divident - divider;
+        cout << "Quotient: " << quotient << endl;
+        cout << "Remainder: " << remainder << endl;
+        return;
+      }
+      else if(divider == divident){
+        quotient++;
+        cout << "Quotient: " << quotient << endl;
+        cout << "Remainder: " << remainder << endl;
+        return;
+      }
+    }
+  }
 }
 
 void exercise_17(int n) {
