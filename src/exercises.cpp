@@ -280,6 +280,14 @@ void exercise_16(int divident, int divider) {
     cout << "";
     return;
   }
+  else if(divident == 0 && divider == 0){
+    cout << "0" << " " << "0" << endl;
+    return;
+  }
+  else if(divident > divider){
+    cout << "0" << " " << divident << endl;
+    return;
+  }
   else{
     divider_aux = divider;
     while(divider <= divident){
