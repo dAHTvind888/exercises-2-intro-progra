@@ -185,16 +185,23 @@ int exercise_10(int a, int b) {
   int div_c1 = 0;
   int div_c2 = 1;
 
-  for(int i = 1; i <= a && i <= b; i++){
-    if(a % i == 0 && b % i == 0){
-      div_c1 = i;
-      if(div_c1 > div_c2){
-        div_c2 = div_c1;
+  if(a == 0 && b != 0){
+    return b;
+  }
+  else if(a != 0 && b ==0){
+    return b;
+  }
+  else{
+    for(int i = 1; i <= a && i <= b; i++){
+      if(a % i == 0 && b % i == 0){
+        div_c1 = i;
+        if(div_c1 > div_c2){
+          div_c2 = div_c1;
+        }
       }
     }
+    return div_c2;
   }
-  
-  return div_c2;
 }
 
 void exercise_11() {
