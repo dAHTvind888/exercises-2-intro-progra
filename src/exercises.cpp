@@ -84,12 +84,17 @@ int exercise_6(int n) {
   string n_str = to_string(n);
   int digit_container = 0; 
   int sum_digits = 0;
-
-  for(int i = 0; i < n_str.size(); ++i){
-    digit_container = n_str[i] - '0';
-    sum_digits += digit_container;
+  
+  if(n <= 0){
+    return 0;
   }
-  return sum_digits;
+  else{
+    for(int i = 0; i < n_str.size(); ++i){
+      digit_container = n_str[i] - '0';
+      sum_digits += digit_container;
+    }
+    return sum_digits;
+  }
 }
 
 void exercise_7(int n) {
