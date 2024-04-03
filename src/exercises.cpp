@@ -233,7 +233,19 @@ long exercise_13(int n, int k) {
 
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
-  return "";
+  string n_str = to_string(n);
+  string n_reverse;
+
+  for(int i = n_str.size() - 1; i >= 0; i--){
+    n_reverse += n_str[i];
+  }
+
+  if(n_reverse == n_str){
+    return "Es palindromo";
+  }
+  else{
+    return "No es palindromo";
+  }
 }
 
 void exercise_15(int decimal) {
