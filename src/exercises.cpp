@@ -100,12 +100,17 @@ int exercise_6(int n) {
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
   double n_sum, sum_container;
-
-  for(int i = 1; i <= n; i++){
-    sum_container = pow(-1, i + 1)/ i;
-    n_sum += sum_container;
+  if(n == 0){
+    n_sum = 0;
+    cout << n_sum
   }
+  else{
+    for(int i = 1; i <= n; i++){
+      sum_container = pow(-1, i + 1)/ i;
+      n_sum += sum_container;
+    }
     cout << n_sum << endl;
+  }
 }
 
 void exercise_8(string s) {
