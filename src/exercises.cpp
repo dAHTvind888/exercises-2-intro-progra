@@ -324,6 +324,7 @@ void exercise_17(int n) {
     }
   }
 }
+
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
 }
