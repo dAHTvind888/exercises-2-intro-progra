@@ -223,7 +223,12 @@ void exercise_12() {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-  return 0;
+  long result = 0; // intialize the variable, give it a value, otherwise it may cause undefined behaviour
+    
+  for(int i = 1; i <= n; i++){
+    result += pow(i, k);
+  }
+  return result;
 }
 
 string exercise_14(int n) {
