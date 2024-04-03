@@ -284,7 +284,7 @@ void exercise_16(int divident, int divider) {
     cout << "0" << " " << "0" << endl;
     return;
   }
-  else if(divident > divider){
+  else if(divident < divider){
     cout << "0" << " " << divident << endl;
     return;
   }
