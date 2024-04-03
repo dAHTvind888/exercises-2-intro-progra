@@ -188,8 +188,8 @@ int exercise_10(int a, int b) {
   if(a == 0 && b != 0){
     return b;
   }
-  else if(a != 0 && b ==0){
-    return b;
+  else if(a != 0 && b == 0){
+    return a;
   }
   else{
     for(int i = 1; i <= a && i <= b; i++){
