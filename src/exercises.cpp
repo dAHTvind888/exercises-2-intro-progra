@@ -288,12 +288,12 @@ void exercise_16(int divident, int divider) {
       if(divider > divident){
         divider -= divider_aux;
         remainder = divident - divider;
-        cout << quotient << remainder << endl;
+        cout << quotient << "" << remainder << endl;
         return;
       }
       else if(divider == divident){
         quotient++;
-        cout << quotient << remainder << endl;
+        cout << quotient << "" << remainder << endl;
         return;
       }
     }
