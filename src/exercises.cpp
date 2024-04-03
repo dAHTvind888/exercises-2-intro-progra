@@ -310,6 +310,18 @@ void exercise_16(int divident, int divider) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
+  for(int i = 0; i <= n;){
+    for(int j = 2, k = 2; k < j; k++){
+    if(j % k == 0 && j != k){
+      j++;
+      continue;
+    }
+    else{
+      cout << j;
+      n++;
+      j++;
+    }
+  }
 }
 
 void exercise_18_19(int debut, int fin) {
