@@ -102,7 +102,7 @@ void exercise_7(int n) {
   double n_sum, sum_container;
   if(n == 0){
     n_sum = 0;
-    cout << n_sum
+    cout << n_sum << endl;
   }
   else{
     for(int i = 1; i <= n; i++){
