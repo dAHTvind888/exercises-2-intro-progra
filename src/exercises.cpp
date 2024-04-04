@@ -311,8 +311,8 @@ void exercise_16(int divident, int divider) {
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
   bool is_prime = true;
-  prime_num = 2;
-  n_counter = 0;
+  int prime_num = 2;
+  int n_counter = 0;
 
   while(n_counter < n){
     is_prime = true;
