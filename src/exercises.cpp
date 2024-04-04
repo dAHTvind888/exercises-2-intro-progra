@@ -324,7 +324,7 @@ void exercise_17(int n) {
     }
 
     if(is_prime){
-      cout << prime_num;
+      cout << prime_num << " ";
       n_counter++;
       prime_num++;
     }
