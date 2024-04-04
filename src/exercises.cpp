@@ -310,17 +310,26 @@ void exercise_16(int divident, int divider) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
-  for(int i = 0; i <= n;){
-    for(int j = 2, k = 2; k < j; k++){
-      if(j % k == 0 && j != k){
-        j++;
-        continue;
+  bool is_prime = true;
+  prime_num = 2
+  n_counter = 0;
+
+  while(n_counter < n){
+    is_prime = true;
+    for(int i = 2; i < prime_num; i++){
+      if(prime_num % i == 0){
+        is_prime = false;
+        break;
       }
-      else{
-        cout << j;
-        n++;
-        j++;
-      }
+    }
+
+    if(is_prime){
+      cout << prime_num;
+      n_counter++;
+      prime_num++;
+    }
+    else{
+    prime_num++;
     }
   }
 }
