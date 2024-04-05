@@ -116,7 +116,13 @@ void exercise_5(int n, int k) {
           cout << day_month << " " << endl;
         }
         else{
-          cout << day_month << endl;
+          if(day_month < 10){
+            cout << " " << day_month;
+          }
+          else{
+            cout << day_month << endl;
+          }
+          
         }
       }
       else{
