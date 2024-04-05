@@ -340,7 +340,7 @@ void exercise_18_19(int debut, int fin) {
   int counter = 0;
   int debut_aux = debut;
 
-  if(debut < 0){
+  if(debut <= 0){
     cout << "El numero debe de ser positivo y mayor a zero" << endl;
   }
   else if(fin < debut){
