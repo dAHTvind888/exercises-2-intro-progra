@@ -86,7 +86,7 @@ void exercise_5(int n, int k) {
         cout << day_month << endl;
       }
       else{
-        cout << day_month;
+        cout << " " << day_month << " ";
       }
     }
   }
