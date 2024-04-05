@@ -97,7 +97,7 @@ void exercise_5(int n, int k) {
   }
   else if(n != 1){
     while(day_week != n){
-      cout << " " << " " << " ";
+      cout << " " << " " << " " << " ";
       day_week++;
     }
 
