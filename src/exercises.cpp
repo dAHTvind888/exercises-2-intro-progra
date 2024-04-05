@@ -277,7 +277,9 @@ void exercise_11() {
   double U = 1;
   double U_aux;
   string Un = "U";
+  
   cout << "U0 = 1" << endl;
+  
   for(int i = 0, j = 1; i < 10; i++, j++){
     U_aux = U/(i + 1);
     cout << Un << j << " = " << U_aux << endl;
@@ -287,6 +289,18 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
+  double U = 1;
+  double U_aux;
+  string Un = "U";
+  string Vn = "V";
+  double sum_Un = 0;
+  
+  for(int i = 0, j = 1; i < 10; i++, j++){
+    U_aux = U/(i + 1);
+    sum_Un += U_aux;
+    cout << Un << j << " = " << U_aux << " " << Vn << j << " = " << sum_Un << endl;
+    U = U_aux;
+  }
 }
 
 long exercise_13(int n, int k) {
