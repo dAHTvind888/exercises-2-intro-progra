@@ -348,14 +348,14 @@ void exercise_18_19(int debut, int fin) {
   else{
     for(; debut <= fin; debut++){
       while(debut != 0){
-        if(n % 3 == 0){
-          n += 4;
+        if(debut % 3 == 0){
+          debut += 4;
         }
-        else if(n % 3 != 0 && n % 4 == 0){
-          n /= 2;
+        else if(debut % 3 != 0 && debut % 4 == 0){
+          debut /= 2;
         }
         else{
-          n -= 1;
+          debut -= 1;
         }
 
         ++counter;
