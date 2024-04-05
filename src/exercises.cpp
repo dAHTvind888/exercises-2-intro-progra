@@ -120,10 +120,20 @@ void exercise_5(int n, int k) {
       }
       else{
         if(day_month >= 10){
-          cout << day_month << " ";
+          if(day_month == k){
+            cout << day_month << endl;
+          }
+          else{
+            cout << day_month << " ";
+          }
         }
         else{
-          cout << " " << day_month << " ";
+          if(day_month == k){
+            cout << day_month << endl;
+          }
+          else{
+            cout << " " << day_month << " ";
+          }
         }
       }
     }
