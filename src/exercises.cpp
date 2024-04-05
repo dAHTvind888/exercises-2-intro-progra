@@ -357,7 +357,6 @@ void exercise_18_19(int debut, int fin) {
         else{
           debut -= 1;
         }
-
         ++counter;
     }
       cout << debut << "->" << counter << endl;
