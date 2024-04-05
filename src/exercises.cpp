@@ -111,7 +111,7 @@ void exercise_5(int n, int k) {
 
     for(; day_week <= 7 && day_month <= k; day_week++, day_month++){
       if(day_week == 7){
-        cout << " " << day_month << endl;
+        cout << day_month << endl;
       }
       else{
         if(day_month >= 10){
