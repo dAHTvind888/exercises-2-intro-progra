@@ -338,6 +338,7 @@ void exercise_17(int n) {
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
   int counter = 0;
+  int i = debut;
 
   if(debut < 0){
     cout << "El numero debe de ser positivo y mayor a zero" << endl;
@@ -347,6 +348,8 @@ void exercise_18_19(int debut, int fin) {
   }
   else{
     for(; debut <= fin; debut++){
+      i = debut;
+          
       while(debut != 0){
         if(debut % 3 == 0){
           debut += 4;
@@ -360,6 +363,7 @@ void exercise_18_19(int debut, int fin) {
         ++counter;
     }
       cout << debut << "->" << counter << endl;
+      counter = 0;
     }
   }
 }
