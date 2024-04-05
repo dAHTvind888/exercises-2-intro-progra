@@ -316,6 +316,7 @@ void exercise_17(int n) {
 
   while(n_counter < n){
     is_prime = true;
+
     for(int i = 2; i < prime_num; i++){
       if(prime_num % i == 0){
         is_prime = false;
@@ -336,4 +337,30 @@ void exercise_17(int n) {
 
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
+  int counter = 0;
+
+  if(debut < 0){
+    cout << "El numero debe de ser positivo y mayor a zero" << endl;
+  }
+  else if(fin < debut){
+    cout << "El numero de fin no debe de ser menor al inicial" << endl;
+  }
+  else{
+    for(; debut <= fin; debut++){
+      while(debut != 0){
+        if(n % 3 == 0){
+          n += 4;
+        }
+        else if(n % 3 != 0 && n % 4 == 0){
+          n /= 2;
+        }
+        else{
+          n -= 1;
+        }
+
+        ++counter;
+    }
+      cout << debut << "->" << counter << endl;
+    }
+  }
 }
