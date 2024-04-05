@@ -102,6 +102,7 @@ void exercise_5(int n, int k) {
       }
       else{
         cout << " " << day_month;
+        
       }
     }
   }
