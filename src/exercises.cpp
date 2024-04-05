@@ -80,18 +80,13 @@ void exercise_5(int n, int k) {
   int day_week = 1;
   int day_month = 1;
 
-  if(n > 7 || n < 1 || k < 1 || k > 99){
-    cout << "n has to be in the range 1-7" << endl;
-    cout << "k has to be in the range 1-99" << endl;
-    return;
-  }
-  else if(n == 1){
+  if(n == 1){
     for(; day_week <= 7 && day_month <= k; day_week++, day_month++){
       if(day_week == 7){
-        cout << day_month << endl;
+        cout <<day_month << endl;
       }
       else{
-        cout << day_month << " " << " ";
+        cout << " " << day_month << " " << " ";
       }
     }
   }
@@ -123,7 +118,7 @@ void exercise_5(int n, int k) {
           cout << day_month << " ";
         }
         else{
-          cout << day_month << " " << " ";
+          cout << " " << day_month << " " << " ";
         }
       }
     }
