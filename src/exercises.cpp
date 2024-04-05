@@ -77,6 +77,57 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+  int day_week = 1;
+  int day_month = 1;
+
+  if(n > 7 || n < 1 || k < 1 || k > 99){
+    cout << "n has to be in the range 1-7" << endl;
+    cout << "k has to be in the range 1-99" << endl;
+    return;
+  }
+  else if(n == 1){
+    for(; day_week <= 7 && day_month <= k; day_week++, day_month++){
+      if(day_week == 7){
+        cout << day_month << endl;
+      }
+      else{
+        cout << day_month << " " << " ";
+      }
+    }
+  }
+  else if(n != 1){
+    while(day_week != n){
+      cout << " " << " " << " ";
+      day_week++;
+    }
+
+    for(; day_week <=7; day_week++, day_month++){
+      if(day_week == 7){
+        cout << day_month << endl;
+      }
+      else{
+        cout << day_month << " " << " ";
+      }
+    }
+  }
+  
+  while(day_month <= k){
+    day_week = 1;
+
+    for(; day_week <= 7 && day_month <= k; day_week++, day_month++){
+      if(day_week == 7){
+        cout << day_month << endl;
+      }
+      else{
+        if(day_month >= 10){
+          cout << day_month << " ";
+        }
+        else{
+          cout << day_month << " " << " ";
+        }
+      }
+    }
+  }
 }
 
 int exercise_6(int n) {
