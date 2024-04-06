@@ -297,8 +297,7 @@ void exercise_12() {
   
   for(int i = 0, j = 1; i < 10; i++, j++){
     U_aux = U/(i + 1);
-    cout << Un << j << " = " << U_aux;
-    cout << Vn << j << " = " << " 1 " << endl;
+    cout << Un << j << " = " << U_aux << " " << Vn << j << " = " << "1" << endl;
     U = U_aux;
   }
 }
